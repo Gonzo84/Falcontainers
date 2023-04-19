@@ -1,0 +1,97 @@
+.section.kontakt {
+    background-color: #FCF3EC;
+    position: relative;
+
+    > div {
+        padding-bottom: 2rem;
+    }
+
+    .section-content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        h3 {
+            color: $accent;
+            font-weight: $font-weight-semibold;
+            font-size: 2rem;
+            margin-bottom: 5rem;
+
+            @media screen and (min-width: 785px) {
+                font-size: 2.5rem;
+            }
+
+            @media screen and (max-width: 510px){
+                text-align: center;
+                font-size: 1.6rem;
+            }
+        }
+    }
+
+    .section-title {
+        margin-bottom: 5rem;
+
+        @media screen and (min-width: 768px) {
+            max-width: 60%;
+            font-size: 5rem;
+        }
+
+        @media screen and (min-width: 926px) {
+            font-size: 6rem;
+        }
+
+        @media screen and (min-width:1024px) {
+            font-size: 6rem;
+        }
+
+        @media screen and (min-width: 1250px) {
+            font-size: 7rem;
+        }
+    }
+
+    .btn {
+        background-color: transparent;
+        padding: 3rem 6rem;
+        margin-bottom: 6rem;
+        white-space: nowrap;
+    }
+
+    .circle-with-leaves {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 4.5rem;
+        position: relative;
+        border-radius: 50%;
+        padding: 4rem;
+        text-align: center;
+        color: $accent-light;
+        width: 381px;
+        height: 381px;
+        margin-bottom: 5rem;
+
+        @media screen and (max-width: #{$mobile-only}) {
+            width: 200px;
+            height: 200px;
+            font-size: 2.5rem;
+        }
+    }
+
+    .circle-picture {
+        position: absolute;
+        z-index: 0;
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        background-image: url("#{$img-path}kontakt/circle-leaves.png");
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+
+    .circle-text {
+        z-index: 1;
+    }
+
+}

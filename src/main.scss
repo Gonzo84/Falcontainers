@@ -1,0 +1,58 @@
+@import "sass/abstract/variables";
+@import "sass/abstract/functions";
+@import "sass/abstract/mixins";
+@import "sass/abstract/helpers";
+
+//@include material-icons-mixin;
+@include font-mixin;
+
+@import "sass/shared/normalized";
+@import "sass/shared/animations";
+@import "sass/shared/icons";
+@import "sass/shared/shared";
+@import "../../lacely-project/src/sass/shared/circle";
+
+@import "sass/layout/header/header";
+@import "sass/layout/main/main";
+
+@import "sass/components/nav";
+@import "sass/components/secondary-hambuerger";
+@import "../../lacely-project/src/sass/components/sidemenu";
+@import "sass/components/btn";
+@import "../../lacely-project/src/sass/components/dialog";
+@import "sass/components/grt-youtube";
+
+@import "sass/sections/hero";
+@import "sass/sections/was-wir-tun";
+@import "sass/sections/markenidee";
+@import "sass/sections/produkte";
+@import "sass/sections/mission";
+@import "sass/sections/vision";
+@import "sass/sections/hintergrund";
+@import "sass/sections/wertschopfung";
+@import "../../lacely-project/src/sass/sections/wir";
+@import "../../lacely-project/src/sass/sections/kontakt";
+@import "../../lacely-project/src/sass/sections/faq";
+@import "sass/slick.css";
+@import "sass/slick-theme.css";
+
+.coming-soon {
+  height: 100%;
+
+  body {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url("#{$img-path}intro/hero.jpg");
+  }
+
+  h1 {
+    padding: 5rem;
+    font-size: 5rem;
+    background-color: rgba($white, 0.8);
+  }
+}

@@ -1,0 +1,8 @@
+/node_modules
+node_modules
+misc.xml
+modules.xml
+vcs.xml
+/build
+.idea
+/.idea
