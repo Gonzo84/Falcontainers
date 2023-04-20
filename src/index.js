@@ -127,11 +127,9 @@ $(document).ready(function () {
         // setting css classes to header and sections that inform them that header height is reduced or not
         if (windscroll >= 140) {
             $('.header').addClass('header-reduced');
-            $('.section').addClass('header-reduced');
 
         } else {
             $('.header').removeClass('header-reduced');
-            $('.section').removeClass('header-reduced');
         }
 
         // iterating through every section

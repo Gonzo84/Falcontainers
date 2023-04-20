@@ -51,13 +51,7 @@
         }
     }
 
-    &.active {
-        &:after {
-            transform: scaleX(1);
-        }
-    }
-
-    &:hover.active {
+    &.active, &:hover {
         &:after {
             transform: scaleX(1);
         }
