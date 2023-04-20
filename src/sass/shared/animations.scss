@@ -32,7 +32,6 @@
     $animationDelayLong: 600ms;
 
     // shared animations
-    &.markenidee,
     &.produkte,
     &.mission,
     &.vision,
@@ -159,45 +158,6 @@
 
             .circle-picture {
                 animation: rotate-negative-to-positive 1s forwards linear;
-            }
-        }
-    }
-
-    &.markenidee {
-
-        .section-part {
-            //transform: translateX(-50%);
-            opacity: 0;
-
-            &.left,
-            &.right {
-                transition-property: opacity;
-                transition-timing-function: $animationStyle;
-                transition-duration: $animationDurationShort;
-            }
-
-            &.left {
-                transition-delay: $animationDelayMedium;
-
-                @media screen and (max-width: 768px) {
-                    transition-delay: $animationDelayShort;
-                }
-            }
-
-            &.right {
-                transition-delay: $animationDelayShort;
-
-                @media screen and (max-width: 768px) {
-                    transition-delay: $animationDelayMedium;
-                }
-            }
-        }
-
-        &.in-view {
-
-            .section-part {
-                opacity: 1;
-                //transform: translateX(0);
             }
         }
     }
