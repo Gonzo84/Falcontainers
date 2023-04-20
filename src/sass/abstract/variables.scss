@@ -49,15 +49,13 @@ $font-weight-semibold: 600;
 /// App font weight bold
 /// @group op-vars
 $font-weight-bold: 700;
-/// App accent color
 /// @group op-vars
-$accent: #53654f; // #52644F
-/// App accent color
+$primary: #00007d;
 /// @group op-vars
-$accent-light: #76b728;
+$primary-light: #62929E;
 /// App secondary color
 /// @group op-vars
-$secondary: #64a4b5;
+$secondary: #8D99AE;
 /// App white color
 /// @group op-vars
 $white: #fff;
@@ -66,7 +64,7 @@ $white: #fff;
 $black: #000;
 /// App text color
 /// @group op-vars
-$color: #534f4b;
+$color: #333333;
 /// App text color light
 /// @group op-vars
 $color-light: #898887;
@@ -85,7 +83,6 @@ $header-height: 14rem;
 /// App header height
 /// @group op-vars
 $header-reduced-height: 8rem;
-/// App accent color
 /// @group op-vars
 $border-radius: 0.4rem;
 /// App animation duration

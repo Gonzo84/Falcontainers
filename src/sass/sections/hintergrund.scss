@@ -144,7 +144,7 @@
         }
 
         &.second {
-            color: $accent-light;
+            color: $primary-light;
 
             .circle-picture {
                 background-image: url("#{$img-path}hintergrund/circle-green.png");
@@ -251,7 +251,7 @@
     .top {
 
         h3 {
-            color: $accent;
+            color: $primary;
         }
     }
 
@@ -355,7 +355,7 @@
                 right: 4rem;
                 top: -2rem;
                 display: block;
-                background-color: $accent-light;
+                background-color: $primary-light;
 
                 @media screen and (max-width: 615px) {
                     right: 2rem;
@@ -385,7 +385,7 @@
                 height: 1rem;
                 width: 80px;
                 display: block;
-                background-color: $accent-light;
+                background-color: $primary-light;
 
                 @media screen and (max-width: 615px) {
                     left: 2rem;
@@ -405,7 +405,7 @@
             h3 {
                 margin: 0;
                 min-height: 10.8rem;
-                color: $accent-light;
+                color: $primary-light;
             }
         }
     }

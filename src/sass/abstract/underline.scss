@@ -1,14 +1,14 @@
 /// @name underline
 /// @group mixins
 /// @author Stevan Stojanovic
-/// @param {string} $color [$accent] color of the underline
+/// @param {string} $color [$primary] color of the underline
 /// @param {string} $animate ['none'] name of the animation posibilites are ['center-to-sides', 'to-right', 'to-left']
 /// @param {number} $underline-height [1px] the lines height
 /// @param {number} $animation-duration [300] animation duration in miliseconds
 /// @param {number} $animation-delay [null] animation delay in miliseconds
 /// @param {string} $animation-type ['ease-in-out'] animation type quoted
 @mixin underline(
-    $color: $accent,
+    $color: $primary,
     $animate: 'none',
     $underline-height: .7rem,
     $animation-duration: $animation-duration,

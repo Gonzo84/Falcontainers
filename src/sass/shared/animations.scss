@@ -9,10 +9,14 @@
 
 @keyframes rotate-negative-to-positive {
     0% {
-        transform: rotate(-20deg);
+        transform: rotate(-180deg);
+        opacity: 0;
+        scale: 0.2;
     }
     100% {
         transform: rotate(0deg);
+        opacity: 1;
+        scale: 1;
     }
 }
 
@@ -154,7 +158,7 @@
             }
 
             .circle-picture {
-                animation: rotate-negative-to-positive 2s forwards linear;
+                animation: rotate-negative-to-positive 1s forwards linear;
             }
         }
     }
@@ -401,7 +405,7 @@
             }
 
             .circle-picture {
-                animation: rotate-negative-to-positive 2000ms forwards linear;
+                animation: rotate-negative-to-positive 1s forwards linear;
             }
         }
     }
@@ -488,7 +492,7 @@
 
             .circle-picture {
                 opacity: 1;
-                animation: rotate-negative-to-positive 2s forwards linear;
+                animation: rotate-negative-to-positive 1s forwards linear;
             }
         }
     }

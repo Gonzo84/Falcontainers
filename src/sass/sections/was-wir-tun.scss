@@ -16,6 +16,8 @@
         justify-content: center;
         text-align: center;
         align-items: center;
+        background: rgba($secondary,0.8);
+        border-radius: 50%;
 
         @media screen and (max-width: 1280px) {
             top: -11rem;
@@ -34,19 +36,25 @@
     }
 
     .circle-picture {
-        width: 100%;
-        height: 100%;
+        width: 15rem;
+        height: 15rem;
         z-index: 2;
         background-repeat: no-repeat;
         background-position: center;
         background-size: contain;
-        background-image: url("#{$img-path}was-wir-tun/greener-everyday.png");
+        background-image: url("#{$img-path}was-wir-tun/logo.png");
         position: absolute;
+
+
+        @media screen and (max-width: 768px) {
+            width: 10rem;
+            height: 10rem;
+        }
     }
 
     .circle-text {
         font-size: 24px;
-        color: $accent-light;
+        color: $primary-light;
         z-index: 1;
         width: 60%;
         line-height: 1.3;
@@ -102,7 +110,7 @@
 
         h3 {
             font-family: $font-family-serif;
-            color: $accent-light;
+            color: $primary-light;
             font-size: 2.8rem;
             margin: 0;
         }
@@ -292,11 +300,11 @@
         }
 
         @media screen and (max-width: 629px) {
-            min-width: 547px;
-            min-height: 697px;
+            min-width: 270px;
+            min-height: 300px;
             background-image: url("#{$img-path}was-wir-tun/right-picture-mobile.png");
-            background-size: 547px 697px;
-            right: -4rem;
+            background-size: 270px 300px;
+            right: 0rem;
         }
 
         @media screen and (max-width: 525px) {

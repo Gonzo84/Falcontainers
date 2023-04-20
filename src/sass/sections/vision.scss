@@ -24,7 +24,7 @@
         h3 {
             font-size: 4.5rem;
             margin-top: 0;
-            color: $accent-light;
+            color: $primary-light;
             font-family: $font-family-serif;
 
             @media screen and (max-width: 1200px) {
@@ -144,7 +144,7 @@
                     font-family: $font-family-serif;
                     top: -11rem;
                     right: 0;
-                    color: $accent;
+                    color: $primary;
 
                     @media screen and (max-width: 550px) {
                         font-size: 6rem;
