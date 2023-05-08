@@ -139,32 +139,6 @@ $(document).ready(function () {
             if (isFullySeen(this) === true) {
                 $(this).addClass('in-view');
             }
-
-            // scrolling to the VISION section result in triggering animation
-            if (isFullySeen(this) === true && $(this).hasClass('vision')) {
-                setTimeout(function () {
-                    let myInterval = setInterval(function () {
-                        if (twentyNumber < 20) {
-                            twentyNumber += 1;
-                            $('.c100').addClass(`p${twentyNumber}`);
-                            $('#twenty-percent').text(`${twentyNumber}`)
-                        } else {
-                            clearInterval(myInterval);
-                        }
-                    }, 150);
-                }, 1000);
-
-                setTimeout(function () {
-                    let myInterval2 = setInterval(function () {
-                        if (eightyNumber < 80) {
-                            eightyNumber += 1;
-                            $('#eighty-percent').text(`${eightyNumber}`)
-                        } else {
-                            clearInterval(myInterval2);
-                        }
-                    }, 150);
-                }, 1000);
-            }
         });
     });
 
@@ -175,22 +149,16 @@ $(document).ready(function () {
         $('.navi-trigger').removeClass('cross');
         $('html').removeClass('no-scroll-y');
 
-        if ($(this).hasClass('was-wir-tun')) {
-            $('html, body').animate({scrollTop: Math.round($('#was-wir-tun').offset().top - headerHeightOnClickNavigation)}, lAnimationDuration);
+        if ($(this).hasClass('what-we-do')) {
+            $('html, body').animate({scrollTop: Math.round($('#what-we-do').offset().top - headerHeightOnClickNavigation)}, lAnimationDuration);
             setTimeout(() => {
-                $('#was-wir-tun').addClass('in-view');
+                $('#what-we-do').addClass('in-view');
             }, lAnimationDuration);
         }
         if ($(this).hasClass('produkte')) {
             $('html, body').animate({scrollTop: Math.round($('#produkte').offset().top - headerHeightOnClickNavigation)}, lAnimationDuration);
             setTimeout(() => {
                 $('#produkte').addClass('in-view');
-            }, lAnimationDuration);
-        }
-        if ($(this).hasClass('mission')) {
-            $('html, body').animate({scrollTop: Math.round($('#mission').offset().top - headerHeightOnClickNavigation)}, lAnimationDuration);
-            setTimeout(() => {
-                $('#mission').addClass('in-view');
             }, lAnimationDuration);
         }
         if ($(this).hasClass('hintergrund')) {
@@ -228,7 +196,7 @@ $(document).ready(function () {
     // get start button listener
     $('.get-started').click(function () {
         $('.nav-item.hero').removeClass('active');
-        $('html, body').animate({scrollTop: $('#was-wir-tun').offset().top - headerHeightOnClickNavigation}, lAnimationDuration);
+        $('html, body').animate({scrollTop: $('#what-we-do').offset().top - headerHeightOnClickNavigation}, lAnimationDuration);
     });
 
     /// hamburger fancier menu click handler

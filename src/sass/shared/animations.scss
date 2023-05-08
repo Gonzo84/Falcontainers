@@ -33,8 +33,6 @@
 
     // shared animations
     &.produkte,
-    &.mission,
-    &.vision,
     &.hintergrund,
     &.wertschopfung,
     &.kontakt {
@@ -54,7 +52,7 @@
         }
     }
 
-    &.was-wir-tun {
+    &.what-we-do {
 
         .circle-picture,
         .circle-text,
@@ -202,115 +200,6 @@
                 opacity: 1;
                 transform: translateX(0) translateY(0);
             }
-        }
-    }
-
-    &.mission {
-
-        .section-row {
-
-            .left,
-            .right {
-                opacity: 0;
-                transition-property: opacity, transform;
-                transition-duration: $animationDurationShort;
-                transition-timing-function: $animationStyle;
-            }
-
-            &:not(.second) {
-
-                .left {
-                    transition-delay: $animationDelayMedium;
-                }
-            }
-
-            &.second {
-
-                //.left,
-                //.right {
-                //    transform: translateX(-50%);
-                //}
-
-                .left {
-                    transition-delay: $animationDelayLong + 500;
-                }
-
-                .right {
-                    transition-delay: $animationDelayLong;
-                }
-
-                @media screen and (max-width: 1000px) {
-
-                    .left {
-                        transition-delay: $animationDelayMedium;
-                    }
-
-                    .right {
-                        transition-delay: $animationDelayLong;
-                    }
-                }
-            }
-        }
-
-        &.in-view {
-
-            .section-row {
-
-                .left,
-                .right {
-                    opacity: 1;
-                }
-
-                //&.second {
-                //
-                //    .left,
-                //    .right {
-                //        transform: translateX(0);
-                //    }
-                //}
-            }
-        }
-    }
-
-    &.vision {
-
-        .left,
-        .right {
-            //transform: translateX(-50%);
-            opacity: 0;
-            transition-property: opacity, transform;
-            transition-duration: $animationDurationShort;
-            transition-timing-function: $animationStyle;
-        }
-
-        .left {
-            transition-delay: $animationDelayLong;
-        }
-
-        .right {
-            //transform: translateX(-100%);
-            transition-delay: $animationDelayMedium;
-        }
-
-        //.slice span {
-        //    opacity: 0;
-        //    transition-property: opacity;
-        //    transition-duration: $animationDurationShort;
-        //    transition-timing-function: $animationStyle;
-        //    transition-delay: $animationDelayLong + $animationDelayMedium;
-        //}
-
-        &.in-view {
-
-            .left,
-            .right {
-                //transform: translateX(0);
-                opacity: 1;
-            }
-
-            //.slice span {
-            //    opacity: 1;
-            //}
         }
     }
 
