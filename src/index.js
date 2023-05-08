@@ -161,22 +161,10 @@ $(document).ready(function () {
                 $('#products').addClass('in-view');
             }, lAnimationDuration);
         }
-        if ($(this).hasClass('hintergrund')) {
-            $('html, body').animate({scrollTop: Math.round($('#hintergrund').offset().top - headerHeightOnClickNavigation)}, lAnimationDuration);
+        if ($(this).hasClass('about-us')) {
+            $('html, body').animate({scrollTop: Math.round($('#about-us').offset().top - headerHeightOnClickNavigation)}, lAnimationDuration);
             setTimeout(() => {
-                $('#hintergrund').addClass('in-view');
-            }, lAnimationDuration);
-        }
-        if ($(this).hasClass('wertschopfung')) {
-            $('html, body').animate({scrollTop: Math.round($('#wertschopfung').offset().top - headerHeightOnClickNavigation)}, lAnimationDuration);
-            setTimeout(() => {
-                $('#wertschopfung').addClass('in-view');
-            }, lAnimationDuration);
-        }
-        if ($(this).hasClass('wir')) {
-            $('html, body').animate({scrollTop: Math.round($('#wir').offset().top - headerHeightOnClickNavigation)}, lAnimationDuration);
-            setTimeout(() => {
-                $('#wir').addClass('in-view');
+                $('#about-us').addClass('in-view');
             }, lAnimationDuration);
         }
         if ($(this).hasClass('kontakt')) {

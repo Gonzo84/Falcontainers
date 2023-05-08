@@ -33,8 +33,6 @@
 
     // shared animations
     &.products,
-    &.hintergrund,
-    &.wertschopfung,
     &.kontakt {
 
         .section-titlebar {
@@ -203,92 +201,7 @@
         }
     }
 
-    &.hintergrund {
-
-        .circle,
-        .logo,
-        .derux,
-        .bottom,
-        .left,
-        .right,
-        .circles-separator{
-            opacity: 0;
-            transition-property: opacity;
-            transition-duration: $animationDurationShort;
-            transition-timing-function: ease-in-out;
-        }
-
-        .circle {
-            transition-duration: 2000ms;
-        }
-
-        .logo,
-        .circles-separator {
-            transition-delay: 250ms;
-        }
-
-        .derux {
-            transition-delay: 500ms;
-        }
-
-        .bottom {
-            transition-delay: 750ms;
-        }
-
-        .left {
-            transition-delay: 1000ms;
-        }
-
-        .right {
-            transition-delay: 1250ms;
-        }
-
-        &.in-view {
-            .circle,
-            .logo,
-            .derux,
-            .bottom,
-            .left,
-            .right {
-                opacity: 1;
-            }
-
-            .circle-picture {
-                animation: rotate-negative-to-positive 1s forwards linear;
-            }
-        }
-    }
-
-    &.wertschopfung {
-
-        .left,
-        .right {
-            //transform: translateX(-50%);
-            opacity: 0;
-            transition-property: opacity, transform;
-            transition-duration: $animationDurationShort;
-            transition-timing-function: $animationStyle;
-        }
-
-        .left {
-            transition-delay: $animationDelayMedium;
-        }
-
-        .right {
-            transition-delay: $animationDelayShort;
-        }
-
-        &.in-view {
-
-            .left,
-            .right {
-                opacity: 1;
-                //transform: translateX(0);
-            }
-        }
-    }
-
-    &.wir {
+    &.about-us {
 
         .ceo {
             opacity: 0;
