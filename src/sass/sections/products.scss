@@ -3,14 +3,14 @@
     min-height: 100vh;
     z-index: 4;
 
-    .plastic {
+    .logo {
         position: absolute;
         right: 4rem;
         top: -10rem;
         background-repeat: no-repeat;
         background-position: center;
         background-size: contain;
-        background-image: url("#{$img-path}products/plastik.png");
+        background-image: url("#{$img-path}what-we-do/logo.png");
         width: 20rem;
         height: 20rem;
         display: flex;
