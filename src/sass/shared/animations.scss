@@ -33,7 +33,7 @@
 
     // shared animations
     &.products,
-    &.kontakt {
+    &.contact {
 
         .section-titlebar {
             opacity: 0;
@@ -194,7 +194,7 @@
         &.in-view {
 
             .plastic,
-            .section-card{
+            .section-card {
                 opacity: 1;
                 transform: translateX(0) translateY(0);
             }
@@ -208,12 +208,29 @@
             transition-property: opacity;
             transition-duration: $animationDurationMedium;
             transition-timing-function: $animationStyle;
+            display: flex;
+            flex-direction: column;
 
-            &.gerd {
+            &.bobby {
                 transition-delay: $animationDelayMedium;
 
                 @media screen and (max-width: 768px) {
                     transition-delay: $animationDelayShort;
+                }
+
+                .avatar-bubble {
+                    align-content: center;
+                    justify-content: center;
+                    --chip-size: 300px;
+                    --bg-color: gray;
+                    width: var(--chip-size);
+                    height: var(--chip-size);
+                    border-radius: 50%;
+                    vertical-align: middle;
+                    overflow: hidden;
+                    display: flex;
+                    margin: 0 auto;
+                    border: 8px solid rgba(195, 224, 229, 0.7);;
                 }
             }
 
@@ -234,7 +251,7 @@
         }
     }
 
-    &.kontakt {
+    &.contact {
 
         .circle-with-leaves,
         .circle-picture,

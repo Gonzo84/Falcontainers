@@ -167,10 +167,10 @@ $(document).ready(function () {
                 $('#about-us').addClass('in-view');
             }, lAnimationDuration);
         }
-        if ($(this).hasClass('kontakt')) {
-            $('html, body').animate({scrollTop: Math.round($('#kontakt').offset().top - headerHeightOnClickNavigation + 1)}, lAnimationDuration); // fix for not setting active cls on kontakt nav item
+        if ($(this).hasClass('contact')) {
+            $('html, body').animate({scrollTop: Math.round($('#contact').offset().top - headerHeightOnClickNavigation + 1)}, lAnimationDuration); // fix for not setting active cls on contact nav item
             setTimeout(() => {
-                $('#kontakt').addClass('in-view');
+                $('#contact').addClass('in-view');
             }, lAnimationDuration);
         }
         if ($(this).hasClass('faq')) {
