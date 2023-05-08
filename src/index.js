@@ -155,10 +155,10 @@ $(document).ready(function () {
                 $('#what-we-do').addClass('in-view');
             }, lAnimationDuration);
         }
-        if ($(this).hasClass('produkte')) {
-            $('html, body').animate({scrollTop: Math.round($('#produkte').offset().top - headerHeightOnClickNavigation)}, lAnimationDuration);
+        if ($(this).hasClass('products')) {
+            $('html, body').animate({scrollTop: Math.round($('#products').offset().top - headerHeightOnClickNavigation)}, lAnimationDuration);
             setTimeout(() => {
-                $('#produkte').addClass('in-view');
+                $('#products').addClass('in-view');
             }, lAnimationDuration);
         }
         if ($(this).hasClass('hintergrund')) {

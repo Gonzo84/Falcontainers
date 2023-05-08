@@ -1,4 +1,4 @@
-.section.produkte {
+.section.products {
     background-color: $secondary;
     min-height: 100vh;
     z-index: 4;
@@ -10,7 +10,7 @@
         background-repeat: no-repeat;
         background-position: center;
         background-size: contain;
-        background-image: url("#{$img-path}produkte/plastik.png");
+        background-image: url("#{$img-path}products/plastik.png");
         width: 20rem;
         height: 20rem;
         display: flex;
